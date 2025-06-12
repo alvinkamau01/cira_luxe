@@ -1,0 +1,40 @@
+.mainContainer{
+    margin-top: 10px;
+}
+
+.image{
+    border-radius:1000px;
+}
+
+  
+  /* Navbar Styles */
+  .nav-bar {
+    transition: top 0.3s;
+  }
+  
+  .nav-bar.hidden {
+    top: -100px; /* Adjust this value based on your navbar height */
+  }
+  
+  .nav-bar.visible {
+    top: 0;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    padding-top: 5rem;
+    margin-top: 5rem;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .hero-section {
+      padding-top: 2rem;
+      margin-top: 2rem;
+    }
+  
+    .product-section {
+      margin-top: 2rem;
+    }
+  }
+  

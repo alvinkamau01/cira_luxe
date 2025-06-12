@@ -1,0 +1,86 @@
+/* paymentpage.css */
+
+/* General container styling */
+.payment-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Center the title */
+  .payment-page h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styles */
+  .payment-page .form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .payment-page .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  /* Labels */
+  .payment-page .form-label {
+    font-weight: 600;
+    color: #555;
+  }
+  
+  /* Buttons */
+  .payment-page .btn-primary {
+    background-color: #007bff;
+    border: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .payment-page .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .payment-page .btn-link {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .payment-page .btn-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  /* Alerts */
+  .payment-page .alert {
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Row alignment */
+  .payment-page .row {
+    margin-bottom: 15px;
+  }
+  
+  /* Success message */
+  .payment-page .alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+  }
+  
+  /* Error message */
+  .payment-page .alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+  }
+  

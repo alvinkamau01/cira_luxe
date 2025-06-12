@@ -1,0 +1,75 @@
+/* Shop Component Styles */
+.shop-container {
+    background-color: #fff7f9; /* Soft pink background */
+    padding: 2rem 1rem;
+  }
+  
+  .shop-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #5a4d56; /* Soft grayish plum */
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .product-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 0.3s ease;
+  }
+  
+  .product-card:hover .product-image {
+    opacity: 0.9;
+  }
+  
+  .product-info {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .product-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #5a4d56;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+  }
+  
+  .product-name:hover {
+    color: #e07a9e;
+  }
+  
+  .product-color {
+    font-size: 0.9rem;
+    color: #b5a8b0;
+  }
+  
+  .product-price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e07a9e;
+    margin-top: 0.5rem;
+  }
+  

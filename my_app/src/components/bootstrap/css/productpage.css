@@ -1,0 +1,41 @@
+.product-page {
+    padding: 20px;
+  }
+  
+  .product-gallery .main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .product-gallery .thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    object-fit: cover;
+  }
+  
+  .product-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .product-price {
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  .color-options {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .color-badge {
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+  

@@ -1,0 +1,33 @@
+.shopping-cart-modal .modal-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.cart-item {
+  padding: 15px;
+}
+
+.product-image {
+  max-height: 100px;
+}
+
+.product-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.product-price {
+  font-size: 1rem;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.subtotal-label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.subtotal-value {
+  font-size: 1rem;
+  color: #333;
+}
