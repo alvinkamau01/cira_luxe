@@ -5,7 +5,7 @@ import Preview from './components/bootstrap/shoppingcart';
 import ProductPage from './components/bootstrap/productpage';
 import PaymentPage from './components/bootstrap/paymentpage';
 import PhilosophyPage from './components/tailwind/philosophyPage';
-import CheckoutPage from './components/tailwind/checkoutpage';
+import EnhancedCheckoutPage from './components/tailwind/enhancedCheckout';
 import Home from './components/tailwind/homepage'
 import Dashboard from './components/tailwind/dashboard'
 import  Header  from "./components/tailwind/dashboardComponents/header"
@@ -15,6 +15,8 @@ import PaymentScreen from './components/tailwind/payment'
 import MPesaPaymentPage from './components/tailwind/mpesaPayment'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LoginPage from './components/tailwind/loginPage';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -28,7 +30,7 @@ function App() {
       <Route path='/paymentpage' element={<PaymentPage/>}/>
       <Route path='/' element={<PhilosophyPage/>}/>
       <Route path='/homepage' element={<Home/>}/>
-      <Route path='/checkout' element={<CheckoutPage/>}/>
+      <Route path='/checkout' element={<EnhancedCheckoutPage/>}/>
       <Route path='/payment' element={<PaymentScreen/>}/>
       <Route path='/dashboard' element={<Dashboard/>}/>
       <Route path='/header' element={<Header/>}/>
@@ -37,6 +39,18 @@ function App() {
       <Route path='/sidebar' element={<Sidebar/>}/>
       <Route path='/login' element={<LoginPage/>}/>
     </Routes>
+    <ToastContainer
+      position="top-right"
+      autoClose={3000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      theme="light"
+    />
     </BrowserRouter>
 
   );

@@ -7,7 +7,7 @@ import { useState, useEffect } from "react"
 const NavBar = ({cartGlow, onCartClick}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
-  const numOfItems = useSelector((state) => state.basket.itemsInBasket)
+  const numOfItems = useSelector((state) => state.basket.totalItems)
 
   // Handle scroll effect
   useEffect(() => {
@@ -25,14 +25,14 @@ const NavBar = ({cartGlow, onCartClick}) => {
   }, [isMenuOpen])
 
   const cartIconClasses = `h-6 w-6 transition-all duration-300 ${
-    cartGlow ? "text-yellow-500 animate-pulse" : 
+    cartGlow ? "text-yellow-500 animate-pulse" :
     numOfItems > 0 ? "text-rose-500" : "text-rose-600"
   }`;
 
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-      isScrolled ? "bg-white/95 backdrop-blur-sm shadow-md" : "bg-gradient-rose-100"
+      isScrolled ? "bg-white shadow-md" : "bg-gradient-rose-100"
     }`}>
       <div className="max-w-7xl mx-auto px-4 pt-8 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
@@ -86,7 +86,7 @@ const NavBar = ({cartGlow, onCartClick}) => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="fixed inset-0 z-50 md:hidden bg-pink-50/95 backdrop-blur-sm flex flex-col justify-center items-center transition-all duration-300">
+        <div className="fixed inset-0 z-50 md:hidden bg-pink-50 flex flex-col justify-center items-center transition-all duration-300">
           <div className="absolute top-4 right-4">
             <button onClick={() => setIsMenuOpen(false)} className="p-2 rounded-full bg-white/80 text-rose-500 hover:bg-white hover:text-rose-600 transition-all duration-200 shadow-md">
               <X className="h-6 w-6" />
